@@ -17,22 +17,22 @@ const slideIn = {
   },
   atLeave: {
     opacity: 0,
-    translateX: -100,
+    translateX: -100
   },
   atActive: {
     opacity: 1,
-    translateX: 0,
+    translateX: 0
   }
-}
+};
 
 /*
 This maps styles for react-router-transition.
  */
-function mapStyles(styles){
+function mapStyles(styles) {
   return {
     transform: `translateX(${styles.translateX}%)`,
     opacity: styles.opacity
-  }
+  };
 }
 
 export default function Routing() {
@@ -60,7 +60,7 @@ const Boop = styled.div`
   flex-direction: column;
   height: 100vh;
   justify-content: center;
-`
+`;
 
 function MusicTODO() {
   return (
@@ -71,13 +71,17 @@ function MusicTODO() {
 }
 
 function JournalismTODO() {
-  return (<Boop>
-    <p>TODO: Portfolio</p>
-  </Boop>);
+  return (
+    <Boop>
+      <p>TODO: Portfolio</p>
+    </Boop>
+  );
 }
 
 function SoftwareTODO() {
-  return (<Boop>
-    <p>TODO: Contact</p>
-  </Boop>);
+  return (
+    <Boop>
+      <p>TODO: Contact</p>
+    </Boop>
+  );
 }
