@@ -1,7 +1,6 @@
 import React from "react";
-import MaterialIcon from "material-icons-react";
+//import MaterialIcon from "material-icons-react";
 import styled from "styled-components";
-import Navbar from "../components/Navbar.js"
 
 const WelcomeScreen = styled.div`
   display: flex;
@@ -11,15 +10,7 @@ const WelcomeScreen = styled.div`
   padding-bottom: 10vh;
 `;
 
-const SectionOne = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 10vh;
-  width: 100vw;
-  background-color: orange;
-`;
-
+/*
 const IconWithText = (text, iconName) => {
   const IconText = styled.div`
     display: flex;
@@ -34,7 +25,7 @@ const IconWithText = (text, iconName) => {
   );
 };
 
-/*
+
 const SectionOneBar = () => {
   return (
     <SectionOne>
