@@ -1,11 +1,16 @@
 import React from "react";
 import "./App.css";
-import Routing from "./areas/Router.js";
+import Routering from "./areas/Routering.js";
+import Navbar from "./components/Navbar.js";
+import { BrowserRouter as Router } from "react-router-dom";
 
 function App() {
   return (
     <div className="App">
-      <Routing />
+      <Router>
+        <Routering />
+        <Navbar/>
+      </Router>
     </div>
   );
 }
