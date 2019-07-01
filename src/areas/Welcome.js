@@ -43,7 +43,7 @@ export default class Welcome extends React.Component {
       <div>
         <WelcomeScreen>
           <h1>Hi, I'm Daniel.</h1>
-          <p>Let's do great things together.</p>
+          <p>I build software.</p>
         </WelcomeScreen>
       </div>
     );

@@ -1,59 +1,48 @@
 import React from "react";
 import { BrowserRouter, Route, Switch, withRouter } from "react-router-dom";
-import { AnimatedSwitch } from "react-router-transition";
 import styled from "styled-components";
-import Navbar from "../components/Navbar.js";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
 import Welcome from "./Welcome.js";
-
-class About extends React.Component {
-  render = () => {
-    return (
-      <>
-        <Boop>
-          <h1>TODO: About</h1>
-        </Boop>
-      </>
-    );
-  };
-}
+import About from "./About.js";
+import Contact from "./Contact.js";
+import Portfolio from "./Portfolio/Portfolio.js";
 
 const Wrapper = styled.div`
-  .fade-enter {
-    opacity: 0.01;
+  .page-enter {
+    opacity: 0;
+    transform: translateX(100vw);
+    position: absolute;
   }
 
-  .fade-enter.fade-enter-active {
+  .page-enter-done {
+    transform: translateX(0);
     opacity: 1;
-    transition: opacity 300ms ease-in;
+    transition: all 200ms linear 100ms;
   }
 
-  .fade-exit {
+  .page-exit {
+    transform: translateX(0vw);
     opacity: 1;
   }
 
-  .fade-exit.fade-exit-active {
-    opacity: 0.01;
-    transition: opacity 300ms ease-in;
+  .page-exit-active {
+    transform: translateX(-100vw);
+    opacity: 0;
+    transition: all 300ms linear;
   }
 
   div.transition-group {
     position: relative;
-  }
-
-  section.route-section {
-
   }
 `;
 
 function Container({ location }) {
   return (
     <Wrapper>
-      <TransitionGroup className="whole-page">
+      <TransitionGroup className="transition-group">
         <CSSTransition
           key={location.key}
-          timeout={{ enter: 450, exit: 150 }}
+          timeout={{ enter: 300, exit: 300 }}
           classNames="page"
         >
           <section className="route-section">
@@ -71,26 +60,3 @@ function Container({ location }) {
 }
 
 export default withRouter(Container);
-
-const Boop = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-`;
-
-function Portfolio() {
-  return (
-    <Boop>
-      <p>TODO: Portfolio</p>
-    </Boop>
-  );
-}
-
-function Contact() {
-  return (
-    <Boop>
-      <p>TODO: Contact</p>
-    </Boop>
-  );
-}
