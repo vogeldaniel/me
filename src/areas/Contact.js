@@ -5,7 +5,7 @@ import styled from "styled-components";
 const Boop = styled.div`
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 90vh;
   justify-content: center;
 `;
 
