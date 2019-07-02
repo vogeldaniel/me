@@ -1,8 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
-import { NavLink, withRouter } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import Fade from "react-reveal/Fade";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 const Navbox = styled.div`
   display: flex;

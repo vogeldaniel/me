@@ -1,9 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { NavLink, Route, withRouter } from "react-router-dom";
+import { NavLink, Route } from "react-router-dom";
 import PortfolioNav from "./PortfolioNav.js";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-
 
 const Navbox = styled.div`
   display: flex;
@@ -85,31 +83,5 @@ const BottomBlocker = styled.div`
   bottom: 0;
   align-self: center;
 `
-
-const AnimationWrapper = styled.div`
-  .box-enter {
-    opacity: 0;
-    position: absolute;
-  }
-
-  .box-enter-done {
-    opacity: 1;
-    transition: all 2000ms;
-  }
-
-  .box-exit {
-    opacity: 1;
-  }
-
-  .box-exit-active {
-    transform: opacity;
-    opacity: 0;
-    transition: all 2000ms;
-  }
-
-  div.nav-box {
-    position: relative;
-  }
-`;
 
 export default Navbar;
