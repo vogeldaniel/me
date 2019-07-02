@@ -13,6 +13,7 @@ const Navbox = styled.div`
   margin: 0 0 5em 0;
   bottom: 0;
   position: fixed;
+  background-color: white;
 `;
 
 const linkStyle = {
@@ -27,7 +28,7 @@ const activeStyle = {
 
 const createNavLink = (text, destination) => {
   return (
-    <Fade top big delay={250} duration={250}>
+    <Fade bottom big delay={250} duration={250}>
       <NavLink
         exact
         to={destination}

@@ -72,9 +72,19 @@ function Navbar() {
         {createNavLink("Contact", "/contact")}
       </NavMain>
       <Route path="/portfolio" component={PortfolioNav}/>
+      <BottomBlocker/>
     </Navbox>
   )
 }
+
+const BottomBlocker = styled.div`
+  width: 70vw;
+  height: 3em;
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  align-self: center;
+`
 
 const AnimationWrapper = styled.div`
   .box-enter {
