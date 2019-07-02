@@ -19,80 +19,8 @@ export default class About extends Component {
     return (
       <>
         <Boop>
-          <h1>About.</h1>
+          <h1>Let's do great things together.</h1>
           <Fade delay={750}>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
-            <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
-            </BlockText>
             <BlockText>
             Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
             illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore

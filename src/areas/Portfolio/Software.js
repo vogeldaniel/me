@@ -19,6 +19,9 @@ export default class Software extends React.Component {
         ]
       }
       tools={"Boop, beep, foo, bar, bingo"}
+      imageURL={"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sprague_squared_square.svg/1280px-Sprague_squared_square.svg.png"}
+      imageALT={"Squaring"}
+      date={"January"}
       />
       <ProjectCard title={"CommuniTree"}
       descriptions={

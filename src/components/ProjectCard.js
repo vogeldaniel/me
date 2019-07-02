@@ -72,17 +72,14 @@ export default class ProjectCard extends React.Component {
         <Card>
           <Title>{this.props.title}</Title>
           <Tools>{this.props.tools}</Tools>
-
-          <Date>Fall 2018</Date>
+          <Date>{this.props.date}</Date>
           <ImageAndText>
-            <ImageBox>
+            <div>
               <Image
-                src={
-                  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Sprague_squared_square.svg/1024px-Sprague_squared_square.svg.png"
-                }
-                alt={"church"}
+                src={this.props.imageURL}
+                alt={this.props.imageAlt}
               />
-            </ImageBox>
+            </div>
             <DescriptionsBox>
               {this.DescriptionPoints(this.props.descriptions)}
             </DescriptionsBox>
