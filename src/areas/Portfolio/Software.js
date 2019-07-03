@@ -1,6 +1,7 @@
 import React from "react";
 import ProjectCard from "../../components/ProjectCard.js";
 import styled from "styled-components";
+import Fade from "react-reveal/Fade";
 
 const BottomBlock = styled.div`
   background-color: white;
@@ -8,6 +9,22 @@ const BottomBlock = styled.div`
 `;
 
 const SoftwareInfo = [
+  {
+    title: "The Cooper Point Journal",
+    tools: ["Wordpress", "mailchimp", "doubleclick", "macOS", "Twitter/Instagram/Facebook"],
+    date: "Fall 2018 - Summer 2019",
+    descriptions: [
+      "Restructured site ad system to capitalize on intermittent spikes in traffic.",
+      "Managed Wordpress site and timely bi-weekly publication",
+      "Instituted security procedures to protect 30+ company accounts and personal data.",
+      "Increased site social media engagement by more than 300%",
+      "Managed post content & SEO and consolidated brand image by ensuring consistent cross-platform identity.",
+      "Mentored junior reporters and edited their stories for clarity and consistent company voice.",
+      "Provided in-depth investigative news coverage and streamlined reporting on breaking news stories."
+    ],
+    imageURL: "https://i1.wp.com/www.cooperpointjournal.com/wp-content/uploads/2017/03/fuckcivilityweb.jpg?zoom=2.625&fit=1000%2C750&ssl=1",
+    imageAlt: "A stack of physical newspapers. The headline reads 'Fuck Civility.'"
+  },
   {
     title: "communiTree",
     tools: ["React Native", "express.js", "mongoDB"],
@@ -51,15 +68,16 @@ const SoftwareInfo = [
 const SoftwareCards = projects => {
   return projects.map(project => {
     return (
-      <ProjectCard
+      <Fade right><ProjectCard
         key={project.title}
         title={project.title}
-        tools={project.tools.join(", ")}
+        subhead={project.tools.join(", ")}
         date={project.date}
         descriptions={project.descriptions}
         imageURL={project.imageURL}
         imageAlt={project.imageAlt}
-      />
+        cardType="software"
+      /></Fade>
     );
   });
 };

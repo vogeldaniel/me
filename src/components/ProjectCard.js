@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Fade from "react-reveal";
 
 const Card = styled.div`
   width: 70vw;
@@ -16,6 +17,20 @@ const Title = styled.div`
   font-size: calc(28px + 2vmin);
 `;
 
+const LinkTitle = styled.a`
+  text-align: right;
+  font-size: calc(28px + 2vmin);
+  font-decoration: none;
+  color: black;
+  text-decoration: none;
+`;
+
+const LinkTitleBox = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+`;
+
 const Date = styled.div`
   text-align: right;
   font-size: calc(14px + 2vmin)
@@ -30,7 +45,7 @@ const TitleAndDate = styled.div`
   vertical-align: bottom;
 `;
 
-const Tools = styled.h3`
+const Subhead = styled.h3`
   text-align: right;
   margin: 0px 0px 0.25em 1em;
 `;
@@ -42,6 +57,14 @@ const Description = styled.p`
   text-align: left;
   margin: 0em 0em 0em 3em;
   font-size: calc(12px + 1vmin);
+`;
+
+const StoryDescription = styled.p`
+  text-justify: inter-word;
+  text-align: left;
+  margin: 0em 0em 0em 3em;
+  font-size: calc(12px + 1vmin);
+  text-indent: 2em;
 `;
 
 const DescriptionsBox = styled.div`
@@ -66,22 +89,69 @@ export default class ProjectCard extends React.Component {
     });
   };
 
+  StoryParagraphs = stories => {
+    return stories.map(story => {
+      return (
+        <>
+          <StoryDescription>{story}</StoryDescription>
+          <br/>
+        </>
+      );
+    });
+  };
+
+  DescriptionRender = (cardType, descriptions) => {
+    if (cardType === "software") {
+      return this.DescriptionPoints(descriptions);
+    } else if (cardType === "stories") {
+      return this.StoryParagraphs(descriptions);
+    } else {
+      return <Description>{descriptions}</Description>;
+    }
+  };
+
+  TitleRender = (cardType, title, URL = null) => {
+    if (cardType === "stories") {
+      return <LinkTitleBox><LinkTitle href={URL}>{title}</LinkTitle></LinkTitleBox>;
+    } else {
+      return <Title>{title}</Title>;
+    }
+  };
+
+  ImageRender = (cardType, imageURL = "", imageAlt = "", linkURL = "") => {
+    if(cardType === "stories"){
+      return (
+        <a  href={linkURL}>
+          <Image src={imageURL} alt={imageAlt}/>
+        </a>
+      )
+    } else {
+      return (
+        <Image src={imageURL} alt={imageAlt}/>
+      )
+    }
+  }
+
   render = () => {
     return (
       <>
         <Card>
-          <Title>{this.props.title}</Title>
-          <Tools>{this.props.tools}</Tools>
+          {this.TitleRender(
+            this.props.cardType,
+            this.props.title,
+            this.props.URL
+          )}
+          <Subhead>{this.props.subhead}</Subhead>
           <Date>{this.props.date}</Date>
           <ImageAndText>
             <div>
-              <Image
-                src={this.props.imageURL}
-                alt={this.props.imageAlt}
-              />
+              {this.ImageRender(this.props.cardType, this.props.imageURL, this.props.imageAlt, this.props.URL)}
             </div>
             <DescriptionsBox>
-              {this.DescriptionPoints(this.props.descriptions)}
+              {this.DescriptionRender(
+                this.props.cardType,
+                this.props.descriptions
+              )}
             </DescriptionsBox>
           </ImageAndText>
         </Card>

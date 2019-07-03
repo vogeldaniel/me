@@ -4,6 +4,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 
 import styled from "styled-components";
 import Software from "./Software.js";
+import Stories from "./Stories.js";
+import Sound from "./Sound.js";
 
 const Boop = styled.div`
   display: flex;
@@ -42,14 +44,6 @@ const Wrapper = styled.div`
     position: relative;
   }
 `;
-
-const Stories = () => {
-  return <Boop>stories</Boop>;
-};
-
-const Sound = () => {
-  return <Boop>sound</Boop>;
-};
 
 function Container({ location }) {
   return (
