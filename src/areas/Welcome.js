@@ -24,17 +24,6 @@ const IconWithText = (text, iconName) => {
     </IconText>
   );
 };
-
-
-const SectionOneBar = () => {
-  return (
-    <SectionOne>
-      {IconWithText("software", "devices_other")}
-      {IconWithText("stories", "web")}
-      {IconWithText("sound", "music_video")}
-    </SectionOne>
-  );
-};
 */
 
 export default class Welcome extends React.Component {

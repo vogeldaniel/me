@@ -62,7 +62,7 @@ const Image = styled.img`
 export default class ProjectCard extends React.Component {
   DescriptionPoints = descriptions => {
     return descriptions.map(description => {
-      return <Description>{description}</Description>;
+      return <Description>{"•" + description}</Description>;
     });
   };
 
