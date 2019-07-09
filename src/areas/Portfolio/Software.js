@@ -94,15 +94,15 @@ const DescriptionStyle = styled.p`
   margin: 2em 15vw 15vh 15vw;
 `;
 
-export default class Software extends React.Component {
-  render() {
-    return (
-      <div>
-        <Title>Full-stack.</Title>
-        <DescriptionStyle>De export consequat philosophari et se anim fugiat ipsum commodo.</DescriptionStyle>
-        {SoftwareCards(SoftwareInfo)}
-        <BottomBlock />
-      </div>
-    );
-  }
+const Software = () => {
+  return (
+    <div>
+      <Title>Full-stack.</Title>
+      <DescriptionStyle>De export consequat philosophari et se anim fugiat ipsum commodo.</DescriptionStyle>
+      {SoftwareCards(SoftwareInfo)}
+      <BottomBlock />
+    </div>
+  );
 }
+
+export default Software;

@@ -24,7 +24,7 @@ const createNavLink = (text, destination) => {
 function Navbar() {
   return (
     <>
-      <TopGradient/>
+      <TopGradient />
       <Navbox>
         <NavMain>
           <NavLink exact to={"/"} style={linkStyle} activeStyle={activeStyle}>
@@ -35,7 +35,7 @@ function Navbar() {
           {createNavLink("Contact", "/contact")}
         </NavMain>
         <Route path="/portfolio" component={PortfolioNav} />
-        <BackBlocker/>
+        <BackBlocker />
       </Navbox>
     </>
   );
@@ -43,7 +43,7 @@ function Navbar() {
 
 const TopGradient = styled.div`
   background-image: linear-gradient(rgba(255,255,255,0),white);
-  height: 0.25vh;
+  height: 0.5vh;
   width: 70vw;
   margin: 0 15vw 5.4em 15vw;
   position: fixed;
