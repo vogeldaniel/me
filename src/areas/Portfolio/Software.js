@@ -82,10 +82,24 @@ const SoftwareCards = projects => {
   });
 };
 
+const Title = styled.h1`
+  font-size: calc(124px + 2vmin);
+  text-align: left;
+  margin: 1em 15vw 0em 15vw;
+`;
+
+const DescriptionStyle = styled.p`
+  font-size: calc(18px + 2vmin);
+  text-align: left;
+  margin: 2em 15vw 15vh 15vw;
+`;
+
 export default class Software extends React.Component {
   render() {
     return (
       <div>
+        <Title>Full-stack.</Title>
+        <DescriptionStyle>De export consequat philosophari et se anim fugiat ipsum commodo.</DescriptionStyle>
         {SoftwareCards(SoftwareInfo)}
         <BottomBlock />
       </div>

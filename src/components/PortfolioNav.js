@@ -45,7 +45,6 @@ const PortfolioNav = () => {
     <Navbox>
       {createNavLink("Software", "/portfolio/software")}
       {createNavLink("Stories", "/portfolio/stories")}
-      {createNavLink("Sounds", "/portfolio/sounds")}
     </Navbox>
   );
 };

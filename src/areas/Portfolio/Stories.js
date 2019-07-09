@@ -2,6 +2,8 @@ import React from "react";
 import ProjectCard from "../../components/ProjectCard.js";
 import Fade from "react-reveal/Fade";
 
+import styled from "styled-components";
+
 const StoryInfo = [
   {
     title: "Socialist Trucker Joshua Collins Says Hell with Heck",
@@ -38,8 +40,8 @@ const StoryInfo = [
     title: "Greeners Developing App to Help Blind Navigate",
     publisher: "The Cooper Point Journal",
     date: "Mar 06 '19",
-    excerpt: ["In 2017, when Robert Kerekes Jr of Morris Plains New Jersey called Evergreen and threatened to “execute as many people on the campus as I can get ahold of,” the students in Senior Zack Hurtz’ program scattered.","“Everyone was gone, and my professor is like, ‘hey, do you need assistance?’“ recounted Hurtz, who is blind. Hurtz’s professor, Ralph Murphy, eventually gave Hurtz a ride home.", "“I look at that, how do we make that more accessible?” said Hurtz. “How do we set up these scenarios where users can be safe while getting out of an unsafe area?”...",
-],
+    excerpt: ["In 2017, when Robert Kerekes Jr of Morris Plains New Jersey called Evergreen and threatened to “execute as many people on the campus as I can get ahold of,” the students in Senior Zack Hurtz’ program scattered.", "“Everyone was gone, and my professor is like, ‘hey, do you need assistance?’“ recounted Hurtz, who is blind. Hurtz’s professor, Ralph Murphy, eventually gave Hurtz a ride home.", "“I look at that, how do we make that more accessible?” said Hurtz. “How do we set up these scenarios where users can be safe while getting out of an unsafe area?”...",
+    ],
     imageURL: "https://i1.wp.com/www.cooperpointjournal.com/wp-content/uploads/2019/03/point-navigation-video-screenshot.png?zoom=2&fit=1024%2C576",
     imageAlt: "Senior Zack Hurtz navigates Evergreen using a walking stick.",
     URL: "http://www.cooperpointjournal.com/2019/03/06/greeners-developing-app-to-help-blind-navigate/",
@@ -84,7 +86,7 @@ const StoryInfo = [
     title: "IWW Demands Go Unfulfilled",
     publisher: "The Cooper Point Journal",
     date: "Nov 26 '18",
-    excerpt: ["The International Workers of the World (IWW) South Sound General Education Union launched a “phone-zap” campaign this morning, after Evergreen State College administration did not meet demands presented at a recent rally.","“Despite over 100 people delivering a letter that called for the school to not hire another cop and to instead employ two full time positions (one in political economy, one in the arts), the administration refuses to hear our demands that remain popular throughout the working class of the college,” the IWW said in a press release...."],
+    excerpt: ["The International Workers of the World (IWW) South Sound General Education Union launched a “phone-zap” campaign this morning, after Evergreen State College administration did not meet demands presented at a recent rally.", "“Despite over 100 people delivering a letter that called for the school to not hire another cop and to instead employ two full time positions (one in political economy, one in the arts), the administration refuses to hear our demands that remain popular throughout the working class of the college,” the IWW said in a press release...."],
     imageURL: "https://i1.wp.com/www.cooperpointjournal.com/wp-content/uploads/2018/11/DSC0447-copy-1-1-1-1-2-2-1-1-1-1-2-1-1-1-1-1-2-1-5-1068x616.jpg?zoom=2&fit=1068%2C616",
     imageAlt: "The red and black flag of the International Workers of The World.",
     URL: "http://www.cooperpointjournal.com/2018/11/26/iww-demands-unfulfilled/",
@@ -93,7 +95,7 @@ const StoryInfo = [
     title: "Carpenters Call for Call-In: Union urges boycott during dispute with local McDonald’s",
     publisher: "The Cooper Point Journal",
     date: "Nov 14 '18",
-    excerpt: ["The South Puget Sound Carpenters Local 129 are involved in a labor dispute with area McDonald’s franchise owner Kim Presto. Organizers and union members have held a banner outside of local McDonald’s franchises for the past couple months.","Presto allegedly hired area contractors EMPrecision to do remodel work. Scott Jones, an organizer for the Pacific Northwest Regional Council of Carpenters, says EMPrecision does not comply with the union’s “area standards.”..."],
+    excerpt: ["The South Puget Sound Carpenters Local 129 are involved in a labor dispute with area McDonald’s franchise owner Kim Presto. Organizers and union members have held a banner outside of local McDonald’s franchises for the past couple months.", "Presto allegedly hired area contractors EMPrecision to do remodel work. Scott Jones, an organizer for the Pacific Northwest Regional Council of Carpenters, says EMPrecision does not comply with the union’s “area standards.”..."],
     imageURL: "https://i0.wp.com/www.cooperpointjournal.com/wp-content/uploads/2018/11/mcdonalds.png?zoom=2&fit=3500%2C2625",
     imageAlt: "Union members hold a sign outside the McDonald's on Plum Street. The sign reads 'Shame on McDonald's'",
     URL: "http://www.cooperpointjournal.com/2018/11/14/carpenters-call-for-call-in-union-urges-boycott-during-dispute-with-local-mcdonalds/",
@@ -120,19 +122,10 @@ const StoryInfo = [
     title: "City Closes Downtown Park “Indefinitely”",
     publisher: "The Cooper Point Journal",
     date: "Sep 19 '18",
-    excerpt: ["Only four years after its opening, the City of Olympia closed downtown’s Artesian Commons Park “indefinitely,” according to a August 24 press release.","A chain link fence appeared before dawn that day, surrounding the main square and a section of sidewalk north of The Pet Works. The well itself and the 24/7 restroom remain open..."],
+    excerpt: ["Only four years after its opening, the City of Olympia closed downtown’s Artesian Commons Park “indefinitely,” according to a August 24 press release.", "A chain link fence appeared before dawn that day, surrounding the main square and a section of sidewalk north of The Pet Works. The well itself and the 24/7 restroom remain open..."],
     imageURL: "https://i2.wp.com/www.cooperpointjournal.com/wp-content/uploads/2018/09/IMG_7748.jpg?zoom=2&fit=4032%2C3024",
     imageAlt: "Protesters gather in front of city hall. Their signs are obscured, but one says 'We are your Neighbors'.",
     URL: "http://www.cooperpointjournal.com/2018/09/19/city-closes-downtown-park-indefinitely-but-who-gave-the-order/",
-  },
-  {
-    title: "",
-    publisher: "",
-    date: "",
-    excerpt: [],
-    imageURL: "",
-    imageAlt: "",
-    URL: "",
   },
 ];
 
@@ -154,8 +147,48 @@ const StoryCards = stories => {
   });
 };
 
+const Title = styled.h1`
+  font-size: calc(48px + 2vmin);
+  text-align: left;
+  margin: 1em 0vw 0em 0vw;
+`;
+
+const DescriptionStyle = styled.p`
+  font-size: calc(18px + 2vmin);
+  text-align: left;
+  margin: 2em 0 15vh 0;
+`;
+
 const Stories = () => {
-  return <div>{StoryCards(StoryInfo)}</div>;
+
+  const StoryTitle = () => {
+    return (
+      <Title>Watchdog.</Title>
+    );
+  }
+
+  const Description = () => {
+    return (
+      <DescriptionStyle>
+        Offendit eruditionem sed eiusmod, duis nam commodo an aute. Eu nisi mentitum voluptatibus, pariatur ut ingeniis.  Deserunt do irure nostrud, eu an quis aute duis.
+      </DescriptionStyle>
+    );
+  }
+
+  return <Boop><StoryTitle /><Description />{StoryCards(StoryInfo)}<BottomBlock /></Boop>;
 };
+
+const Boop = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: 70vw;
+  justify-content: center;
+  margin: 0em 5vw 0em 5vw;
+`;
+
+const BottomBlock = styled.div`
+  background-color: white;
+  height: 6em;
+`;
 
 export default Stories;

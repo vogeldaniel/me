@@ -4,7 +4,7 @@ import Fade from "react-reveal";
 
 const Card = styled.div`
   width: 70vw;
-  margin: 3em auto 3em auto;
+  margin: 1em auto 3em auto;
   border-top: 2px groove black;
   /*background-color: grey;
   border-top: 1px groove black;
@@ -94,7 +94,7 @@ export default class ProjectCard extends React.Component {
       return (
         <>
           <StoryDescription>{story}</StoryDescription>
-          <br/>
+          <br />
         </>
       );
     });
@@ -119,15 +119,15 @@ export default class ProjectCard extends React.Component {
   };
 
   ImageRender = (cardType, imageURL = "", imageAlt = "", linkURL = "") => {
-    if(cardType === "stories"){
+    if (cardType === "stories") {
       return (
-        <a  href={linkURL}>
-          <Image src={imageURL} alt={imageAlt}/>
+        <a href={linkURL}>
+          <Image src={imageURL} alt={imageAlt} />
         </a>
       )
     } else {
       return (
-        <Image src={imageURL} alt={imageAlt}/>
+        <Image src={imageURL} alt={imageAlt} />
       )
     }
   }

@@ -1,1 +1,10 @@
 Daniel Vogel 2019
+
+TODO:
+
+Copy:
+  About page
+  Stories description
+  Software descriptons
+
+Contact info

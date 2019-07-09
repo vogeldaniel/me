@@ -5,7 +5,6 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import styled from "styled-components";
 import Software from "./Software.js";
 import Stories from "./Stories.js";
-import Sound from "./Sound.js";
 
 const Boop = styled.div`
   display: flex;
@@ -59,7 +58,6 @@ function Container({ location }) {
               <Route exact path="/portfolio" component={Software} />
               <Route exact path="/portfolio/software" component={Software} />
               <Route exact path="/portfolio/stories" component={Stories} />
-              <Route exact path="/portfolio/sounds" component={Sound} />
             </Switch>
           </section>
         </CSSTransition>

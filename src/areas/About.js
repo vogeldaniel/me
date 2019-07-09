@@ -8,10 +8,18 @@ const Boop = styled.div`
   height: 90vh;
   width: 70vw;
   justify-content: center;
+  margin: 0em 5vw 0em 5vw;
+`;
+
+const Title = styled.h1`
+  font-size: calc(48px + 2vmin);
+  text-align: left;
+  margin: 0em 2vw 0em 2vw;
 `;
 
 const BlockText = styled.p`
   text-align: left;
+  margin: 1em 2vw 0em 2vw;
 `
 
 export default class About extends Component {
@@ -19,15 +27,16 @@ export default class About extends Component {
     return (
       <>
         <Boop>
-          <h1>Let's do great things together.</h1>
+          <Title>Let's do great things together.</Title>
           <Fade delay={750}>
             <BlockText>
-            Singulis elit e cernantur consectetur. Cupidatat sint mentitum, ex ex magna esse
-            illum, quorum admodum ut sempiternum si eu quid coniunctione se est magna dolore
-            nisi deserunt ad in export litteris adipisicing, quis admodum reprehenderit iis
-            aliquip et litteris. Excepteur legam ullamco. Minim incurreret eu illum
-            magna.Laborum quae offendit. Aute arbitror de transferrem. Fugiat fabulas qui
-            elit multos. Quis ex sed dolore ullamco.
+              Full-stack software development is about more than connecting the front-end to the back-end.
+            </BlockText>
+            <BlockText>
+              Full-stack means connecting people with the data they care about. It means thinking about the user and their experience at every level of design. It means understanding and cleanly defining the relationship between data representation and presentation. It means clean code and thorough documentation.
+            </BlockText>
+            <BlockText>
+              <b>I'm a full-stack software engineer.</b> Let's work together.
             </BlockText>
           </Fade>
         </Boop>
