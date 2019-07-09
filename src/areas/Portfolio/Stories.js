@@ -4,6 +4,8 @@ import Fade from "react-reveal/Fade";
 
 import styled from "styled-components";
 
+import TopDescriptor from "../../components/TopDescriptor.js";
+
 const StoryInfo = [
   {
     title: "Socialist Trucker Joshua Collins Says Hell with Heck",
@@ -233,12 +235,12 @@ const Description = styled.p`
 const Stories = () => {
   return (
     <Boop>
-      <Title>Watchdog.</Title>
-      <Description>
-        Offendit eruditionem sed eiusmod, duis nam commodo an aute. Eu nisi
+      <TopDescriptor
+        title="Watchdog."
+        description="Offendit eruditionem sed eiusmod, duis nam commodo an aute. Eu nisi
         mentitum voluptatibus, pariatur ut ingeniis. Deserunt do irure nostrud,
-        eu an quis aute duis.
-      </Description>
+        eu an quis aute duis."
+        />
       {StoryCards(StoryInfo)}
       <BottomBlock />
     </Boop>
