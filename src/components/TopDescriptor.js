@@ -3,9 +3,9 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
 const Title = styled.h1`
-  font-size: calc(48px + 2vmin);
+  font-size: calc(48px + 1vmin);
   text-align: left;
-  margin: 1em 0vw 0em 0vw;
+  margin: 20vh 0vw 0em 0vw;
 `;
 
 const Description = styled.p`
@@ -18,7 +18,7 @@ const TopDescriptor = props => {
   return (
     <>
       <Title>{props.title}</Title>
-      <Fade delay={750}><Description>{props.description}</Description></Fade>
+      <Description>{props.description}</Description>
     </>
   );
 };

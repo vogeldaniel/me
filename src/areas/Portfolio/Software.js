@@ -71,7 +71,7 @@ const SoftwareInfo = [
 const SoftwareCards = projects => {
   return projects.map(project => {
     return (
-      <Fade right><ProjectCard
+      <Fade key={project.title} right><ProjectCard
         key={project.title}
         title={project.title}
         subhead={project.tools.join(", ")}

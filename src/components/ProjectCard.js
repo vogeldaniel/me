@@ -134,28 +134,26 @@ export default class ProjectCard extends React.Component {
 
   render = () => {
     return (
-      <>
-        <Card>
-          {this.TitleRender(
-            this.props.cardType,
-            this.props.title,
-            this.props.URL
-          )}
-          <Subhead>{this.props.subhead}</Subhead>
-          <Date>{this.props.date}</Date>
-          <ImageAndText>
-            <div>
-              {this.ImageRender(this.props.cardType, this.props.imageURL, this.props.imageAlt, this.props.URL)}
-            </div>
-            <DescriptionsBox>
-              {this.DescriptionRender(
-                this.props.cardType,
-                this.props.descriptions
-              )}
-            </DescriptionsBox>
-          </ImageAndText>
-        </Card>
-      </>
+      <Card>
+        {this.TitleRender(
+          this.props.cardType,
+          this.props.title,
+          this.props.URL
+        )}
+        <Subhead>{this.props.subhead}</Subhead>
+        <Date>{this.props.date}</Date>
+        <ImageAndText>
+          <div>
+            {this.ImageRender(this.props.cardType, this.props.imageURL, this.props.imageAlt, this.props.URL)}
+          </div>
+          <DescriptionsBox>
+            {this.DescriptionRender(
+              this.props.cardType,
+              this.props.descriptions
+            )}
+          </DescriptionsBox>
+        </ImageAndText>
+      </Card>
     );
   };
 }
