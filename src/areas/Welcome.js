@@ -28,8 +28,8 @@ const IconWithText = (text, iconName) => {
 */
 
 const Title = styled.h1`
-  font-size: calc(48px + 2vmin);
-  text-align: left;
+  font-size: calc(24px + 2vmin);
+  text-align: center;
   margin: 0em 2vw 0em 2vw;
 `;
 

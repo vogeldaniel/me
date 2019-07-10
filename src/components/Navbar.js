@@ -84,8 +84,8 @@ const NavMain = styled.div`
   If the navbar is 70vw, then pushing it left 15%
   will center it
    */
-  width: 70vw;
-  left: 15%;
+  width: 80vw;
+  left: 10%;
   justify-content: space-around;
   border-bottom: 1px solid black;
   margin: 0 0 3em 0;

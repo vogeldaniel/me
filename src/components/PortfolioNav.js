@@ -8,8 +8,7 @@ const Navbox = styled.div`
   flex-direction: row;
   width: 70vw;
   justify-content: space-around;
-  border-bottom: 1px groove black;
-  margin: .35em 0 4.2em 0;
+  margin: .35em 0 4.3em 0;
   bottom: 0;
   position: fixed;
   background-color: white;
