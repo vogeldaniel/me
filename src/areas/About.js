@@ -20,6 +20,7 @@ const Title = styled.h1`
 const BlockText = styled.p`
   text-align: left;
   margin: 1em 2vw 0em 2vw;
+  font-size: calc(14px + 1vmin);
 `
 
 export default class About extends Component {

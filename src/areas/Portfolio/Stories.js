@@ -237,10 +237,8 @@ const Stories = () => {
     <Boop>
       <TopDescriptor
         title="Watchdog."
-        description="Offendit eruditionem sed eiusmod, duis nam commodo an aute. Eu nisi
-        mentitum voluptatibus, pariatur ut ingeniis. Deserunt do irure nostrud,
-        eu an quis aute duis."
-        />
+        description="Whether it's conferencing with a senator about student hunger, dodging tear gas at the protest, or using command-line tools to sift through mountains of public records, I'm an investigative journalist committed to seeing the story through."
+      />
       {StoryCards(StoryInfo)}
       <BottomBlock />
     </Boop>

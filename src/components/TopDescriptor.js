@@ -9,16 +9,16 @@ const Title = styled.h1`
 `;
 
 const Description = styled.p`
-  font-size: calc(18px + 2vmin);
+  font-size: calc(18px + 1vmin);
   text-align: left;
-  margin: 2em 0 15vh 0;
+  margin: 2em 0 5vh 0;
 `;
 
 const TopDescriptor = props => {
   return (
     <>
       <Title>{props.title}</Title>
-      <Description>{props.description}</Description>
+      <Fade delay={750}><Description>{props.description}</Description></Fade>
     </>
   );
 };

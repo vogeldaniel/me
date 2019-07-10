@@ -88,7 +88,7 @@ const SoftwareCards = projects => {
 const Software = () => {
   return (
     <Boop>
-      <TopDescriptor title="Full-stack." description="De export consequat philosophari et se anim fugiat ipsum commodo." />
+      <TopDescriptor title="Full-stack software." description="I graduated with a BS in computer science in 2019. I work mainly with Javascript/React.js and Java, but I also have experience with Python, Haskell, SQL and other common tools. {Links coming soon.}" />
       {SoftwareCards(SoftwareInfo)}
       <BottomBlock />
     </Boop>
