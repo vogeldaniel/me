@@ -6,11 +6,8 @@ import Fade from "react-reveal/Fade";
 const Navbox = styled.div`
   display: flex;
   flex-direction: row;
-  width: 80vw;
   justify-content: space-around;
-  margin: 0.35em 0 4.3em 0;
   bottom: 0;
-  position: fixed;
   background-color: white;
 `;
 

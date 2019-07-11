@@ -21,7 +21,7 @@ const createNavLink = (text, destination) => {
   );
 };
 
-function Navbar() {
+function OldNavbar() {
   return (
     <>
       <Navbox>
@@ -38,6 +38,32 @@ function Navbar() {
       </Navbox>
     </>
   );
+}
+
+const NavbarBox = styled.div`
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  width: 80vw;
+  margin-left: 10%;
+`;
+
+function Navbar() {
+  return (
+    <NavbarBox>
+      <Route path="/portfolio" component={PortfolioNav} />
+      <NavMain>
+        <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
+          Home
+      </NavLink>
+        {createNavLink("About", "/about")}
+        {createNavLink("Portfolio", "/portfolio")}
+        {createNavLink("Contact", "/contact")}
+      </NavMain>
+      <BackBlocker />
+    </NavbarBox>
+  )
 }
 
 const TopGradient = styled.div`
@@ -83,13 +109,9 @@ const NavMain = styled.div`
   If the navbar is 70vw, then pushing it left 15%
   will center it
    */
-  width: 80vw;
-  left: 10%;
   justify-content: space-around;
   border-bottom: 1px solid black;
   margin: 0 0 3em 0;
-  bottom: 0;
-  position: fixed;
   background-color: white;
   border-top: 1px groove black;
 `;
