@@ -7,7 +7,7 @@ import About from "./About.js";
 import Contact from "./Contact.js";
 import Portfolio from "./Portfolio/Portfolio.js";
 
-const Wrapper = styled.div`
+const RouterAnimationBox = styled.div`
   .page-enter {
     opacity: 0;
     transform: translateX(100vw);
@@ -37,25 +37,27 @@ const Wrapper = styled.div`
 `;
 
 function Container({ location }) {
-  return (<HashRouter>
-    <Wrapper>
-      <TransitionGroup className="transition-group">
-        <CSSTransition
-          key={location.key}
-          timeout={{ enter: 300, exit: 300 }}
-          classNames="page"
-        >
-          <section className="route-section">
-            <Switch location={location}>
-              <Route exact path="/me" component={Welcome} />
-              <Route path="/about" component={About} />
-              <Route path="/portfolio" component={Portfolio} />
-              <Route path="/contact" component={Contact} />
-            </Switch>
-          </section>
-        </CSSTransition>
-      </TransitionGroup>
-    </Wrapper></HashRouter>
+  return (
+    <HashRouter>
+      <RouterAnimationBox>
+        <TransitionGroup className="transition-group">
+          <CSSTransition
+            key={location.key}
+            timeout={{ enter: 300, exit: 300 }}
+            classNames="page"
+          >
+            <section className="route-section">
+              <Switch location={location}>
+                <Route exact path="/me" component={Welcome} />
+                <Route path="/about" component={About} />
+                <Route path="/portfolio" component={Portfolio} />
+                <Route path="/contact" component={Contact} />
+              </Switch>
+            </section>
+          </CSSTransition>
+        </TransitionGroup>
+      </RouterAnimationBox>
+    </HashRouter>
   );
 }
 
