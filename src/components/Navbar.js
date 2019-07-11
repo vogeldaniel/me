@@ -24,7 +24,6 @@ const createNavLink = (text, destination) => {
 function Navbar() {
   return (
     <>
-      <TopGradient />
       <Navbox>
         <NavMain>
           <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
