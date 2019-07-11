@@ -14,13 +14,18 @@ const Boop = styled.div`
 const Title = styled.h1`
   font-size: calc(36px + 2vmin);
   text-align: left;
-  margin: 5em 2vw 0em 2vw;
+  margin: 15vh 2vw 0em 2vw;
 `;
 
 const BlockText = styled.p`
   text-align: left;
   margin: 1em 2vw 0em 2vw;
   font-size: calc(12px + 1vmin);
+`;
+
+const BlockBox = styled.div`
+  display: flex;
+  flex-direction: column;
 `;
 
 const BottomBlock = styled.div`
@@ -33,23 +38,25 @@ export default class About extends Component {
     return (
       <Boop>
         <Title>Let's do great things together.</Title>
-        <Fade delay={750}>
-          <BlockText>
-            Full-stack software development is about more than connecting the
-            front-end to the back-end.
+        <BlockBox>
+          <Fade delay={750}>
+            <BlockText>
+              Full-stack software development is about more than connecting the
+              front-end to the back-end.
             </BlockText>
-          <BlockText>
-            Full-stack means connecting people with the data they care about.
-            It means thinking about the user and their experience at every
-            level of design. It means understanding and cleanly defining the
-            relationship between data representation and presentation. It
-            means clean code and thorough documentation.
+            <BlockText>
+              Full-stack means connecting people with the data they care about.
+              It means thinking about the user and their experience at every
+              level of design. It means understanding and cleanly defining the
+              relationship between data representation and presentation. It
+              means clean code and thorough documentation.
             </BlockText>
-          <BlockText>
-            <b>I'm a full-stack software engineer.</b> Let's work together.
+            <BlockText>
+              <b>I'm a full-stack software engineer.</b> Let's work together.
             </BlockText>
-        </Fade>
-        <BottomBlock />
+          </Fade>
+          <BottomBlock />
+        </BlockBox>
       </Boop>
     );
   }
