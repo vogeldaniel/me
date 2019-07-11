@@ -9,20 +9,31 @@ const Boop = styled.div`
   justify-content: center;
 `;
 
+const Title = styled.h1`
+  font-size: calc(36px + 2vmin);
+  text-align: left;
+`;
+
+const contactLink = (text, destination) => {
+
+  const LinkStyle = styled.a`
+    font-size: calc(24px + 1vmin);
+    text-align: left;
+  `;
+
+  return <LinkStyle href={destination}>{text}</LinkStyle>;
+};
+
 class Contact extends Component {
+
   render() {
     return (
       <>
         <Boop>
-          <h1>Let's talk.</h1>
-          <b>
-            Work email:
-            <a href="mailto:danieljohnvogel@gmail.com">
-              danieljohnvogel@gmail.com
-            </a>
-          </b>
-          <b>LinkedIn: https://www.linkedin.com/in/daniel-v-95b97a183</b>
-          <b>Github:</b>
+          <Title>Let's talk.</Title>
+          {contactLink("Shoot me an email.", "mailto:danieljohnvogel@gmail.com")}
+          {contactLink("Connect with me on LinkedIn.", "https://www.linkedin.com/in/daniel-v-95b97a183")}
+          {contactLink("Check out my github.", "https://github.com/vogeldaniel")}
         </Boop>
       </>
     );
