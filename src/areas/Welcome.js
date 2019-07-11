@@ -46,22 +46,6 @@ const Line = styled.div`
   justify-content: space-around;
 `;
 
-const LeftTag = props => {
-  return (
-    <Fade left delay={200}>
-      <BlockText>&lt;{props.tag}&gt;</BlockText>
-    </Fade>
-  );
-};
-
-const RightTag = props => {
-  return (
-    <Fade right delay={200}>
-      <BlockText>&lt;/{props.tag}&gt;</BlockText>
-    </Fade>
-  );
-};
-
 const TagWrap = props => {
   return (
     <Line>

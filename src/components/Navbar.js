@@ -21,25 +21,6 @@ const createNavLink = (text, destination) => {
   );
 };
 
-function OldNavbar() {
-  return (
-    <>
-      <Navbox>
-        <NavMain>
-          <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
-            Home
-          </NavLink>
-          {createNavLink("About", "/about")}
-          {createNavLink("Portfolio", "/portfolio")}
-          {createNavLink("Contact", "/contact")}
-        </NavMain>
-        <Route path="/portfolio" component={PortfolioNav} />
-        <BackBlocker />
-      </Navbox>
-    </>
-  );
-}
-
 const NavbarBox = styled.div`
   display: flex;
   flex-direction: column;
@@ -66,37 +47,12 @@ function Navbar() {
   )
 }
 
-const TopGradient = styled.div`
-  background-image: linear-gradient(rgba(255,255,255,0),white);
-  height: 0.5vh;
-  width: 70vw;
-  margin: 0 15vw 5.4em 15vw;
-  position: fixed;
-  bottom: 0;
-  align-self: center;
-`;
-
 const BackBlocker = styled.div`
   width: 100vw;
   height: 3em;
   position: fixed;
   background-color: white;
   bottom: 0;
-`;
-
-/*
-Just above the root-level tag. Holds the whole functional navigation bar.
- */
-const Navbox = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100vw;
-  left: 15%;
-  height: 2em;
-  justify-content: flex-start;
-  position: fixed;
-  background-color: white;
-  margin: 0 0 3em 0;
 `;
 
 /*
@@ -114,18 +70,6 @@ const NavMain = styled.div`
   margin: 0 0 3em 0;
   background-color: white;
   border-top: 1px groove black;
-`;
-
-/*
-A white centered div placed under the navbar.
-Makes it seem like the page scrolls in the middle.
- */
-const BottomBlocker = styled.div`
-  width: 100vw;
-  height: 4em;
-  position: fixed;
-  bottom: 0;
-  align-self: center;
 `;
 
 export default Navbar;

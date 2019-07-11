@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from "react-reveal";
 
 const Card = styled.div`
   width: 70vw;
@@ -38,19 +37,10 @@ const Date = styled.div`
   margin: 0 0 0.25em 0;
 `;
 
-const TitleAndDate = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  vertical-align: bottom;
-`;
-
 const Subhead = styled.h3`
   text-align: right;
   margin: 0px 0px 0.25em 1em;
 `;
-
-const ImageBox = styled.div``;
 
 const Description = styled.p`
   text-justify: inter-word;

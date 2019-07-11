@@ -6,15 +6,6 @@ import styled from "styled-components";
 import Software from "./Software.js";
 import Stories from "./Stories.js";
 
-const Boop = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 90vh;
-  width: 70vw;
-  justify-content: center;
-  align-content: center;
-`;
-
 const Wrapper = styled.div`
   .page-enter {
     opacity: 0;

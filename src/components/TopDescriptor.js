@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import Fade from "react-reveal/Fade";
 
 const Title = styled.h1`
   font-size: calc(48px + 1vmin);
