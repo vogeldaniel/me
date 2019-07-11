@@ -2,18 +2,9 @@ import React, { Component } from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
-const About = () => {
+import AreaPage from "../components/AreaPage.js";
 
-  /*
-  Holds the whole page.
-   */
-  const AboutPage = styled.div`
-    display: flex;
-    flex-direction: column;
-    height: 90vh;
-    width: 80vw;
-    justify-content: center;
-  `;
+const About = () => {
 
   const Title = styled.h1`
     font-size: calc(36px + 2vmin);
@@ -41,7 +32,7 @@ const About = () => {
   `;
 
   return (
-    <AboutPage>
+    <AreaPage>
       <Title>Let's do great things together.</Title>
       <BlockBox>
         <Fade delay={750}>
@@ -62,7 +53,7 @@ const About = () => {
         </Fade>
         <BottomBlock />
       </BlockBox>
-    </AboutPage>
+    </AreaPage>
   );
 };
 

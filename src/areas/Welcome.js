@@ -3,13 +3,7 @@ import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
-const WelcomeScreen = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: 90vh;
-  justify-content: center;
-`;
+import AreaPage from "../components/AreaPage.js";
 
 const Title = styled.h1`
   font-size: calc(24px + 2vmin);
@@ -48,14 +42,14 @@ export default class Welcome extends React.Component {
   render = () => {
     return (
       <div>
-        <WelcomeScreen>
+        <AreaPage>
           <TagWrap tag="h1">
             <Title>Hi, I'm Daniel.</Title>
           </TagWrap>
           <TagWrap tag="p">
             <BlockText>I build software.</BlockText>
           </TagWrap>
-        </WelcomeScreen>
+        </AreaPage>
       </div>
     );
   };
