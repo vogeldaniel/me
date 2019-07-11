@@ -7,7 +7,6 @@ import styled from "styled-components";
 import TopDescriptor from "../../components/TopDescriptor.js";
 import PortfolioPage from "../../components/PortfolioPage.js";
 
-
 const StoryInfo = [
   {
     title: "Socialist Trucker Joshua Collins Says Hell with Heck",
@@ -202,27 +201,39 @@ const StoryInfo = [
   }
 ];
 
-const StoryCards = stories => {
-  return stories.map(story => {
-    return (
-      <Fade right>
-        <ProjectCard
-          key={story.title}
-          title={story.title}
-          subhead={story.publisher}
-          date={story.date}
-          descriptions={story.excerpt}
-          imageURL={story.imageURL}
-          imageAlt={story.imageAlt}
-          URL={story.URL}
-          cardType="stories"
-        />
-      </Fade>
-    );
-  });
-};
-
 const Stories = () => {
+
+  /*
+  Bumps up the bottom of the text so that it ain't covered by the navbar.
+   */
+  const BottomBlock = styled.div`
+    background-color: white;
+    height: 6em;
+  `;
+
+  /*
+  Map StoryInfo JSON onto ProjectCard JSX w/ fade animation.
+   */
+  const StoryCards = stories => {
+    return stories.map(story => {
+      return (
+        <Fade right>
+          <ProjectCard
+            key={story.title}
+            title={story.title}
+            subhead={story.publisher}
+            date={story.date}
+            descriptions={story.excerpt}
+            imageURL={story.imageURL}
+            imageAlt={story.imageAlt}
+            URL={story.URL}
+            cardType="stories"
+          />
+        </Fade>
+      );
+    });
+  };
+
   return (
     <PortfolioPage>
       <TopDescriptor
@@ -234,10 +245,5 @@ const Stories = () => {
     </PortfolioPage>
   );
 };
-
-const BottomBlock = styled.div`
-  background-color: white;
-  height: 6em;
-`;
 
 export default Stories;

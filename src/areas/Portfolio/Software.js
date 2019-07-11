@@ -6,15 +6,16 @@ import Fade from "react-reveal/Fade";
 import TopDescriptor from "../../components/TopDescriptor.js";
 import PortfolioPage from "../../components/PortfolioPage.js";
 
-const BottomBlock = styled.div`
-  background-color: white;
-  height: 6em;
-`;
-
 const SoftwareInfo = [
   {
     title: "The Cooper Point Journal",
-    tools: ["Wordpress", "mailchimp", "doubleclick", "macOS", "Twitter/Instagram/Facebook"],
+    tools: [
+      "Wordpress",
+      "mailchimp",
+      "doubleclick",
+      "macOS",
+      "Twitter/Instagram/Facebook"
+    ],
     date: "Fall 2018 - Summer 2019",
     descriptions: [
       "Restructured site ad system to capitalize on intermittent spikes in traffic.",
@@ -25,8 +26,10 @@ const SoftwareInfo = [
       "Mentored junior reporters and edited their stories for clarity and consistent company voice.",
       "Provided in-depth investigative news coverage and streamlined reporting on breaking news stories."
     ],
-    imageURL: "https://i1.wp.com/www.cooperpointjournal.com/wp-content/uploads/2017/03/fuckcivilityweb.jpg?zoom=2.625&fit=1000%2C750&ssl=1",
-    imageAlt: "A stack of physical newspapers. The headline reads 'Fuck Civility.'"
+    imageURL:
+      "https://i1.wp.com/www.cooperpointjournal.com/wp-content/uploads/2017/03/fuckcivilityweb.jpg?zoom=2.625&fit=1000%2C750&ssl=1",
+    imageAlt:
+      "A stack of physical newspapers. The headline reads 'Fuck Civility.'"
   },
   {
     title: "communiTree",
@@ -68,31 +71,49 @@ const SoftwareInfo = [
   }
 ];
 
-const SoftwareCards = projects => {
-  return projects.map(project => {
-    return (
-      <Fade key={project.title} right><ProjectCard
-        key={project.title}
-        title={project.title}
-        subhead={project.tools.join(", ")}
-        date={project.date}
-        descriptions={project.descriptions}
-        imageURL={project.imageURL}
-        imageAlt={project.imageAlt}
-        cardType="software"
-      /></Fade>
-    );
-  });
-};
-
 const Software = () => {
+
+  /*
+  Bumps up the bottom of the content so it isn't covered by the navbar.
+  If it ain't broke don't fix it...
+   */
+  const BottomBlock = styled.div`
+    background-color: white;
+    height: 6em;
+  `;
+
+  /*
+  Map SoftwareInfo JSON to JSX ProjectCards with Fade animation.
+   */
+  const SoftwareCards = projects => {
+    return projects.map(project => {
+      return (
+        <Fade key={project.title} right>
+          <ProjectCard
+            key={project.title}
+            title={project.title}
+            subhead={project.tools.join(", ")}
+            date={project.date}
+            descriptions={project.descriptions}
+            imageURL={project.imageURL}
+            imageAlt={project.imageAlt}
+            cardType="software"
+          />
+        </Fade>
+      );
+    });
+  };
+
   return (
     <PortfolioPage>
-      <TopDescriptor title="Full-stack software." description="I graduated with a BS in computer science in 2019. I work mainly with Javascript/React.js and Java, but I also have experience with Python, Haskell, SQL and other common tools. {Links coming soon.}" />
+      <TopDescriptor
+        title="Full-stack software."
+        description="I graduated with a BS in computer science in 2019. I work mainly with Javascript/React.js and Java, but I also have experience with Python, Haskell, SQL and other common tools. {Links coming soon.}"
+      />
       {SoftwareCards(SoftwareInfo)}
       <BottomBlock />
     </PortfolioPage>
   );
-}
+};
 
 export default Software;
