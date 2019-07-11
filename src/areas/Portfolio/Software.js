@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
 import TopDescriptor from "../../components/TopDescriptor.js";
-
+import PortfolioPage from "../../components/PortfolioPage.js";
 
 const BottomBlock = styled.div`
   background-color: white;
@@ -87,20 +87,12 @@ const SoftwareCards = projects => {
 
 const Software = () => {
   return (
-    <Boop>
+    <PortfolioPage>
       <TopDescriptor title="Full-stack software." description="I graduated with a BS in computer science in 2019. I work mainly with Javascript/React.js and Java, but I also have experience with Python, Haskell, SQL and other common tools. {Links coming soon.}" />
       {SoftwareCards(SoftwareInfo)}
       <BottomBlock />
-    </Boop>
+    </PortfolioPage>
   );
 }
-
-const Boop = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 70vw;
-  justify-content: center;
-  margin: 0em 5vw 0em 5vw;
-`;
 
 export default Software;

@@ -5,6 +5,8 @@ import Fade from "react-reveal/Fade";
 import styled from "styled-components";
 
 import TopDescriptor from "../../components/TopDescriptor.js";
+import PortfolioPage from "../../components/PortfolioPage.js";
+
 
 const StoryInfo = [
   {
@@ -222,24 +224,16 @@ const StoryCards = stories => {
 
 const Stories = () => {
   return (
-    <Boop>
+    <PortfolioPage>
       <TopDescriptor
         title="Watchdog."
         description="Whether it's conferencing with a senator about student hunger, dodging tear gas at the protest, or using command-line tools to sift through mountains of public records, I'm an investigative journalist committed to seeing the story through."
       />
       {StoryCards(StoryInfo)}
       <BottomBlock />
-    </Boop>
+    </PortfolioPage>
   );
 };
-
-const Boop = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 70vw;
-  justify-content: center;
-  margin: 0em 5vw 0em 5vw;
-`;
 
 const BottomBlock = styled.div`
   background-color: white;
