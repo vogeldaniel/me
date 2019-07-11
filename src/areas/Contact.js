@@ -17,7 +17,11 @@ const Title = styled.h1`
 const contactLink = (text, destination) => {
 
   const LinkStyle = styled.a`
+<<<<<<< HEAD
     font-size: calc(18px + 1vmin);
+=======
+    font-size: calc(24px + 1vmin);
+>>>>>>> 23c1c2e9ec15e22e80048bd12d51966086a4b3db
     text-align: left;
   `;
 
