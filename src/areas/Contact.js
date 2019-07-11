@@ -6,6 +6,13 @@ const Boop = styled.div`
   display: flex;
   flex-direction: column;
   height: 90vh;
+  width: 80vw;
+  justify-content: center;
+`;
+
+const ContactBox = styled.div`
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 `;
 
@@ -15,7 +22,6 @@ const Title = styled.h1`
 `;
 
 const contactLink = (text, destination) => {
-
   const LinkStyle = styled.a`
     font-size: calc(18px + 1vmin);
     text-align: left;
@@ -24,20 +30,28 @@ const contactLink = (text, destination) => {
   return <LinkStyle href={destination}>{text}</LinkStyle>;
 };
 
-class Contact extends Component {
-
-  render() {
-    return (
-      <>
-        <Boop>
+const Contact = () => {
+  return (
+    <>
+      <Boop>
+        <ContactBox>
           <Title>Let's talk.</Title>
-          {contactLink("Shoot me an email.", "mailto:danieljohnvogel@gmail.com")}
-          {contactLink("Connect with me on LinkedIn.", "https://www.linkedin.com/in/daniel-v-95b97a183")}
-          {contactLink("Check out my github.", "https://github.com/vogeldaniel")}
-        </Boop>
-      </>
-    );
-  }
-}
+          {contactLink(
+            "Shoot me an email.",
+            "mailto:danieljohnvogel@gmail.com"
+          )}
+          {contactLink(
+            "Connect with me on LinkedIn.",
+            "https://www.linkedin.com/in/daniel-v-95b97a183"
+          )}
+          {contactLink(
+            "Check out my github.",
+            "https://github.com/vogeldaniel"
+          )}
+        </ContactBox>
+      </Boop>
+    </>
+  );
+};
 
 export default Contact;

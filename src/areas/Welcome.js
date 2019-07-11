@@ -7,25 +7,9 @@ const WelcomeScreen = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 80vh;
-  padding-bottom: 10vh;
+  height: 90vh;
+  justify-content: center;
 `;
-
-/*
-const IconWithText = (text, iconName) => {
-  const IconText = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  `;
-  return (
-    <IconText>
-      <MaterialIcon icon={iconName} size="medium" />
-      <p>{text}</p>
-    </IconText>
-  );
-};
-*/
 
 const Title = styled.h1`
   font-size: calc(24px + 2vmin);
