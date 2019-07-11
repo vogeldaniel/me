@@ -27,7 +27,7 @@ function Navbar() {
       <TopGradient />
       <Navbox>
         <NavMain>
-          <NavLink exact to={"/"} style={linkStyle} activeStyle={activeStyle}>
+          <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
             Home
           </NavLink>
           {createNavLink("About", "/about")}

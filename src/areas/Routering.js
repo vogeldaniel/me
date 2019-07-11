@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, withRouter } from "react-router-dom";
+import { HashRouter, Route, Switch, withRouter } from "react-router-dom";
 import styled from "styled-components";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import Welcome from "./Welcome.js";
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
 `;
 
 function Container({ location }) {
-  return (
+  return (<HashRouter>
     <Wrapper>
       <TransitionGroup className="transition-group">
         <CSSTransition
@@ -47,7 +47,7 @@ function Container({ location }) {
         >
           <section className="route-section">
             <Switch location={location}>
-              <Route exact path="/" component={Welcome} />
+              <Route exact path="/me" component={Welcome} />
               <Route path="/about" component={About} />
               <Route path="/portfolio" component={Portfolio} />
               <Route path="/contact" component={Contact} />
@@ -55,7 +55,7 @@ function Container({ location }) {
           </section>
         </CSSTransition>
       </TransitionGroup>
-    </Wrapper>
+    </Wrapper></HashRouter>
   );
 }
 
