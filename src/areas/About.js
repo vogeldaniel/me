@@ -20,7 +20,7 @@ const Title = styled.h1`
 const BlockText = styled.p`
   text-align: left;
   margin: 1em 2vw 0em 2vw;
-  font-size: calc(12px + 1vmin);
+  font-size: calc(min(12px,2em));
 `;
 
 const BlockBox = styled.div`
@@ -30,7 +30,7 @@ const BlockBox = styled.div`
 
 const BottomBlock = styled.div`
   background-color: white;
-  height: 20em;
+  height: 20vh;
 `;
 
 export default class About extends Component {

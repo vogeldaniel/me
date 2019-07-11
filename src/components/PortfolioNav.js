@@ -6,9 +6,9 @@ import Fade from "react-reveal/Fade";
 const Navbox = styled.div`
   display: flex;
   flex-direction: row;
-  width: 70vw;
+  width: 80vw;
   justify-content: space-around;
-  margin: .35em 0 4.3em 0;
+  margin: 0.35em 0 4.3em 0;
   bottom: 0;
   position: fixed;
   background-color: white;
@@ -52,9 +52,9 @@ const PortfolioNav = () => {
 };
 
 const TopGradient = styled.div`
-  background-image: linear-gradient(rgba(255,255,255,0),white);
+  background-image: linear-gradient(rgba(255, 255, 255, 0), white);
   height: 0.5vh;
-  width: 70vw;
+  width: 80vw;
   margin: 0 15vw 5.4em 15vw;
   position: fixed;
   bottom: 0;

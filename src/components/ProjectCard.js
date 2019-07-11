@@ -33,7 +33,7 @@ const LinkTitleBox = styled.div`
 
 const Date = styled.div`
   text-align: right;
-  font-size: calc(14px + 2vmin)
+  font-size: calc(14px + 1vmin)
   font-style: italic;
   margin: 0 0 0.25em 0;
 `;
@@ -56,14 +56,14 @@ const Description = styled.p`
   text-justify: inter-word;
   text-align: left;
   margin: 0em 0em 0em 3em;
-  font-size: calc(12px + 1vmin);
+  font-size: calc(12px + 0.5vmin);
 `;
 
 const StoryDescription = styled.p`
   text-justify: inter-word;
   text-align: left;
   margin: 0em 0em 0em 3em;
-  font-size: calc(12px + 1vmin);
+  font-size: calc(12px + 0.5vmin);
   text-indent: 2em;
 `;
 
