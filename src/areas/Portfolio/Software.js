@@ -72,7 +72,6 @@ const SoftwareInfo = [
 ];
 
 const Software = () => {
-
   /*
   Bumps up the bottom of the content so it isn't covered by the navbar.
   If it ain't broke don't fix it...

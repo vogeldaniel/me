@@ -202,7 +202,6 @@ const StoryInfo = [
 ];
 
 const Stories = () => {
-
   /*
   Bumps up the bottom of the text so that it ain't covered by the navbar.
    */

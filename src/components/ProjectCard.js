@@ -102,7 +102,11 @@ export default class ProjectCard extends React.Component {
 
   TitleRender = (cardType, title, URL = null) => {
     if (cardType === "stories") {
-      return <LinkTitleBox><LinkTitle href={URL}>{title}</LinkTitle></LinkTitleBox>;
+      return (
+        <LinkTitleBox>
+          <LinkTitle href={URL}>{title}</LinkTitle>
+        </LinkTitleBox>
+      );
     } else {
       return <Title>{title}</Title>;
     }
@@ -114,13 +118,11 @@ export default class ProjectCard extends React.Component {
         <a href={linkURL}>
           <Image src={imageURL} alt={imageAlt} />
         </a>
-      )
+      );
     } else {
-      return (
-        <Image src={imageURL} alt={imageAlt} />
-      )
+      return <Image src={imageURL} alt={imageAlt} />;
     }
-  }
+  };
 
   render = () => {
     return (
@@ -134,7 +136,12 @@ export default class ProjectCard extends React.Component {
         <Date>{this.props.date}</Date>
         <ImageAndText>
           <div>
-            {this.ImageRender(this.props.cardType, this.props.imageURL, this.props.imageAlt, this.props.URL)}
+            {this.ImageRender(
+              this.props.cardType,
+              this.props.imageURL,
+              this.props.imageAlt,
+              this.props.URL
+            )}
           </div>
           <DescriptionsBox>
             {this.DescriptionRender(

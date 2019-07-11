@@ -37,14 +37,14 @@ function Navbar() {
       <NavMain>
         <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
           Home
-      </NavLink>
+        </NavLink>
         {createNavLink("About", "/about")}
         {createNavLink("Portfolio", "/portfolio")}
         {createNavLink("Contact", "/contact")}
       </NavMain>
       <BackBlocker />
     </NavbarBox>
-  )
+  );
 }
 
 const BackBlocker = styled.div`

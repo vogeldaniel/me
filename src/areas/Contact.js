@@ -9,7 +9,6 @@ const Title = styled.h1`
 `;
 
 const contactLink = (text, destination) => {
-
   const LinkStyle = styled.a`
     font-size: calc(18px + 1vmin);
     text-align: left;
@@ -24,11 +23,14 @@ const Contact = () => {
       <AreaPage>
         <Title>Let's talk.</Title>
         {contactLink("Shoot me an email.", "mailto:danieljohnvogel@gmail.com")}
-        {contactLink("Connect with me on LinkedIn.", "https://www.linkedin.com/in/daniel-v-95b97a183")}
+        {contactLink(
+          "Connect with me on LinkedIn.",
+          "https://www.linkedin.com/in/daniel-v-95b97a183"
+        )}
         {contactLink("Check out my github.", "https://github.com/vogeldaniel")}
       </AreaPage>
     </>
   );
-}
+};
 
 export default Contact;
