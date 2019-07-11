@@ -1,11 +1,10 @@
-import React, { Component } from "react";
+import React from "react";
 import styled from "styled-components";
 import Fade from "react-reveal/Fade";
 
 import AreaPage from "../components/AreaPage.js";
 
 const About = () => {
-
   const Title = styled.h1`
     font-size: calc(36px + 2vmin);
     text-align: left;
