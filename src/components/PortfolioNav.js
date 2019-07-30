@@ -41,8 +41,8 @@ const PortfolioNav = () => {
     <>
       <TopGradient />
       <Navbox>
-        {createNavLink("Software", "/me/portfolio/software")}
-        {createNavLink("Stories", "/me/portfolio/stories")}
+        {createNavLink("Software", "/portfolio/software")}
+        {createNavLink("Stories", "/portfolio/stories")}
       </Navbox>
     </>
   );
