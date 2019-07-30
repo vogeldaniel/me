@@ -107,7 +107,7 @@ const Software = () => {
     <PortfolioPage>
       <TopDescriptor
         title="Full-stack software."
-        description="I graduated with a BS in computer science in 2019. I work mainly with Javascript/React.js and Java, but I also have experience with Python, Haskell, SQL and other common tools. {Links coming soon.}"
+        description="I graduated with a BS in computer science in 2019. I work regularly with Javascript (ES6 / React / React Native), Java, Python (Django), SQL, Haskell, HTML5, CSS3 and more."
       />
       {SoftwareCards(SoftwareInfo)}
       <BottomBlock />

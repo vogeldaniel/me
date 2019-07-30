@@ -56,9 +56,8 @@ const Portfolio = () => {
           >
             <section className="route-section">
               <Switch location={location}>
-                <Route exact path="/me/portfolio" component={Software} />
-                <Route exact path="/me/portfolio/software" component={Software} />
-                <Route exact path="/me/portfolio/stories" component={Stories} />
+                <Route path="/portfolio/software" component={Software} />
+                <Route path="/portfolio/stories" component={Stories} />
               </Switch>
             </section>
           </CSSTransition>
