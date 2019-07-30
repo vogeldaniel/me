@@ -33,14 +33,14 @@ const NavbarBox = styled.div`
 function Navbar() {
   return (
     <NavbarBox>
-      <Route path="/portfolio" component={PortfolioNav} />
+      <Route path="/me/portfolio" component={PortfolioNav} />
       <NavMain>
         <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
           Home
         </NavLink>
-        {createNavLink("About", "/about")}
-        {createNavLink("Portfolio", "/portfolio")}
-        {createNavLink("Contact", "/contact")}
+        {createNavLink("About", "/me/about")}
+        {createNavLink("Portfolio", "/me/portfolio/software")}
+        {createNavLink("Contact", "/me/contact")}
       </NavMain>
       <BackBlocker />
     </NavbarBox>

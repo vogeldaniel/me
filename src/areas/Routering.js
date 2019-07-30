@@ -38,26 +38,24 @@ const RouterAnimationBox = styled.div`
 
 function Container({ location }) {
   return (
-    <HashRouter>
-      <RouterAnimationBox>
-        <TransitionGroup className="transition-group">
-          <CSSTransition
-            key={location.key}
-            timeout={{ enter: 300, exit: 300 }}
-            classNames="page"
-          >
-            <section className="route-section">
-              <Switch location={location}>
-                <Route exact path="/me" component={Welcome} />
-                <Route path="/about" component={About} />
-                <Route path="/portfolio" component={Portfolio} />
-                <Route path="/contact" component={Contact} />
-              </Switch>
-            </section>
-          </CSSTransition>
-        </TransitionGroup>
-      </RouterAnimationBox>
-    </HashRouter>
+    <RouterAnimationBox>
+      <TransitionGroup className="transition-group">
+        <CSSTransition
+          key={location.key}
+          timeout={{ enter: 300, exit: 300 }}
+          classNames="page"
+        >
+          <section className="route-section">
+            <Switch location={location}>
+              <Route exact path={"/me/"} component={Welcome} />
+              <Route path={"/me/about/"} component={About} />
+              <Route path={"/me/portfolio/software/"} component={Portfolio} />
+              <Route path={"/me/contact/"} component={Contact} />
+            </Switch>
+          </section>
+        </CSSTransition>
+      </TransitionGroup>
+    </RouterAnimationBox>
   );
 }
 
