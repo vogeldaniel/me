@@ -52,9 +52,6 @@ const TopGradient = styled.div`
   background-image: linear-gradient(rgba(255, 255, 255, 0), white);
   height: 0.5vh;
   width: 80vw;
-  margin: 0 15vw 5.4em 15vw;
-  position: fixed;
-  bottom: 0;
   align-self: center;
 `;
 
