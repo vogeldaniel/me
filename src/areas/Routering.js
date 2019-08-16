@@ -47,7 +47,7 @@ function Container({ location }) {
         >
           <section className="route-section">
             <Switch location={location}>
-              <Route exact path={"/me/"} component={Welcome} />
+              <Route exact path={"/"} component={Welcome} />
               <Route path={"/about/"} component={About} />
               <Route path={"/portfolio/"} component={Portfolio} />
               <Route path={"/contact/"} component={Contact} />
