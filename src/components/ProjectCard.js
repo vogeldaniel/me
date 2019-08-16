@@ -101,15 +101,11 @@ export default class ProjectCard extends React.Component {
   };
 
   TitleRender = (cardType, title, URL = null) => {
-    if (cardType === "stories") {
-      return (
-        <LinkTitleBox>
-          <LinkTitle href={URL}>{title}</LinkTitle>
-        </LinkTitleBox>
-      );
-    } else {
-      return <Title>{title}</Title>;
-    }
+    return (
+      <LinkTitleBox>
+        <LinkTitle href={URL}>{title}</LinkTitle>
+      </LinkTitleBox>
+    );
   };
 
   ImageRender = (cardType, imageURL = "", imageAlt = "", linkURL = "") => {

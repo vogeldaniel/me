@@ -8,6 +8,21 @@ import PortfolioPage from "../../components/PortfolioPage.js";
 
 const SoftwareInfo = [
   {
+    title: "Stackulator",
+    tools: [
+      "React",
+      "Jest",
+      "Styled Components",
+      "Bootstrap"
+    ],
+    date: "August 2019",
+    descriptions: [
+      "Simple react app for learning the stack data structure using familiar calculator environment."
+    ],
+    URL: "https://vogeldaniel.github.io/stackulator/#/",
+    imageURL: "https://raw.githubusercontent.com/vogeldaniel/stackulator/master/public/favicon.ico"
+  },
+  {
     title: "The Cooper Point Journal",
     tools: [
       "Wordpress",
@@ -96,6 +111,7 @@ const Software = () => {
             descriptions={project.descriptions}
             imageURL={project.imageURL}
             imageAlt={project.imageAlt}
+            URL={project.URL}
             cardType="software"
           />
         </Fade>
