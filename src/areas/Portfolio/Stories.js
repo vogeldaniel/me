@@ -8,6 +8,19 @@ import TopDescriptor from "../../components/TopDescriptor.js";
 import PortfolioPage from "../../components/PortfolioPage.js";
 
 const StoryInfo = [
+
+  {
+    title: "In Southwood Park, Neighbors Clash Over Lake Oswego Annexation",
+    publisher: "The Portland Mercury",
+    date: "Sep 11 '19",
+    excerpt: [
+      "Tensions are high in the Southwest neighborhood of Southwood Park, centered on a number of issues familiar to those acquainted with Portland politics: water quality, neighborhood organizations, and the fear of displacement by newer, wealthier homeowners...",
+      "I think most of the people who are concerned about the police or whatever, they have junker cars in their yard,” sats Diane Daybreak, a Southwood resident who supports annexation. “I don't know what they think. But pretty much those who maintain home are less inclined to worry about the LO police.”..."
+    ],
+    imageURL: "https://media1.fdncms.com/portmerc/imager/u/original/27124215/1568160399-screen_shot_2019-09-10_at_5.04.03_pm.png",
+    imageALT: "",
+    URL: "https://www.portlandmercury.com/blogtown/2019/09/11/27123151/in-southwood-park-neighbors-clash-over-lake-oswego-annexation"
+  },
   {
     title: "Socialist Trucker Joshua Collins Says Hell with Heck",
     publisher: "The Cooper Point Journal",
