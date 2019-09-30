@@ -35,7 +35,7 @@ function Navbar() {
     <NavbarBox>
       <Route path="/portfolio" component={PortfolioNav} />
       <NavMain>
-        <NavLink exact to={"/me"} style={linkStyle} activeStyle={activeStyle}>
+        <NavLink exact to={"/"} style={linkStyle} activeStyle={activeStyle}>
           Home
         </NavLink>
         {createNavLink("About", "/about")}
