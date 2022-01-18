@@ -1,3 +1,7 @@
+# Note: This is an older version of my portfolio, and will redirect you to my current portfolio.
+
+You can access the portfolio directly at https://danielvogel.dev
+
 ## Daniel Vogel
 
 Hi, I'm Daniel Vogel.
